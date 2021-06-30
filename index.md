@@ -1,6 +1,6 @@
 ---
 title: "Make a webpage"
-author: "Ed Harris"
+author: "Peter Ngimbwa"
 date: 2020-06-30
 ---
 
