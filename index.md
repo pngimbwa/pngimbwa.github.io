@@ -7,8 +7,6 @@ navbar:
     - text: "About"
       href: about.html
 
-![I just passed my first year report](img/jack.png)  
-
 &nbsp;
 
 # Project overview
