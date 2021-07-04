@@ -1,391 +1,485 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en-us"><head>
+	<meta name="generator" content="Hugo 0.84.4" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-<meta charset="utf-8" />
-<meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Serif+JP&family=Cormorant+Garamond&family=Libre+Baskerville&family=Source+Serif+Pro&family=Crimson+Text&family=Inter&family=Crimson+Pro&family=Literata&family=Ubuntu+Mono&family=Inter&family=Roboto">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 
+    
+    
 
-
-
-<title>Welcome to my website!</title>
-
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-      </style>
-
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
+    <title>PeterCN</title>
 
 
+    
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+</head><body class="container d-flex flex-column min-vh-100">
 
 
 
 
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-</style>
-
-
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.parent().addClass('active');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
-
-<!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
-<!-- code folding -->
 
 
 
 
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
 
 
 
 
-<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">YOURNAME</a>
+
+
+
+<div class="row w-100">
+    <div class="col w-100">
+        
+
+<div class="about row w-100">
+    
+
+
+
+<div class="row w-100 justify-content-center">
+    <img class="rounded-circle  " src="images/profile.png" alt="profile_picture" id="profile_picture" />
+</div>
+
+
+
+<div class=" row w-100 justify-content-center main_color" id="full_name">
+    Peter C Ngimbwa
+</div>
+
+
+
+<div class="affiliations row w-100 justify-content-center">
+    <div class="row w-100 justify-content-center">
+        
+        <div class="row w-100 justify-content-center" id="title-name">
+            <span class="main_color" id="title">
+                Ph.D.,
+            </span>
+            <span id="name" class="text-muted">
+                Harper Adams University
+            </span>
+        </div>
+        <div class="row w-100 justify-content-center text-muted" id="email">
+            19283000@live.harper.ac.uk
+        </div>
+
+
+        
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li>
-  <a href="index.html">
-    <span class="fa fa-home"></span>
-     
-    Home
-  </a>
-</li>
-<li>
-  <a href="about.html">
-    <span class="fa fa-user"></span>
-     
-    About
-  </a>
-</li>
-<li>
-  <a href="cv.html">
-    <span class="fa fa-file-pdf-o"></span>
-     
-    CV
-  </a>
-</li>
-<li>
-  <a href="https://YOURGITHUB.github.io/blog/">
-    <span class="fa fa-rss"></span>
-     
-    Blog
-  </a>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="mailto:YOUREMAIL">
-    <span class="fa fa-envelope-o"></span>
-     
-    Contact me
-  </a>
-</li>
-<li>
-  <a href="https://github.com/YOURGITHUB">
-    <span class="fa fa-github"></span>
-     
-    GitHub
-  </a>
-</li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
-<div class="fluid-row" id="header">
-
-
-
-<h1 class="title toc-ignore">Welcome to my website!</h1>
-
 </div>
 
 
-<p>You’re up and running!</p>
+
+<div class="socials row w-100  justify-content-center">
+    <div class="row w-100 justify-content-center">
+        
+        
+        
+        
+        
+        
+        
 
 
+        
+        <a class="main_color" rel="me" href='https://scholar.google.com/PeterNgimbwa' target="_blank">
+            <i class="ai ai-2x ai-google-scholar academic_icons_customize"></i>
+        </a>
+        
+
+        
+        <a class="main_color" rel="me" href='https://github.com/pngimbwa' target="_blank">
+            <i data-feather="github"></i>
+        </a>
+        
+
+        
+        <a class="main_color" rel="me" href='https://twitter.com/PeterNgimbwa' target="_blank">
+            <i data-feather="twitter"></i>
+        </a>
+        
+
+        
+        <a class="main_color" rel="me" href='https://facebook.com/pierre.ngimbwa' target="_blank">
+            <i data-feather="facebook"></i>
+        </a>
+        
+
+        
+        <a class="main_color" rel="me" href='https://linkedin.com/in/peter-ngimbwa-83b73651' target="_blank">
+            <i data-feather="linkedin"></i>
+        </a>
+        
+
+        
+
+        
+        <a class="main_color" href='cv.pdf' target="_blank">
+            <i class="ai ai-2x ai-cv academic_icons_customize"></i>
+        </a>
+        
+
+    </div>
+</div>
+
+
+
+<div class="introduction row w-100 text-justify">
+    <div class="col w-100">
+        <p>I am expert in website development (Django framework); computer and GIS programming (Python and JavaScript); database design/programming (PostgreSQL); R programming; machine learning and computer vision (deep learning); and machine learning libraries such as TensorFlow and Keras. I have experience working on Google Cloud Platform, Google Earth Engine and Linux environment. I have experience working with Arduino and Nvidia developer Kits such as Jetson Nano and Jetson Xavier NX and Nvidia Transfer Learning Toolkit (TLT) models.
+I have good listening and communication skills.</p>
+<p>I work well in a team but also on my own, as I like to set myself goals, which I always achieve. I have a creative mind and am always up for new challenges. I am well organized and always plan ahead to make sure I manage my time well.</p>
+
+    </div>
+</div>
+
+</div>
+
+<div class="about row w-100">
+    
+
+
+
+
+
+<div class="interests col ">
+    <h4 class="main_color">Interests</h4>
+    <ul>
+        
+        <li>
+            Reading
+        </li>
+        
+        <li>
+            Volunteering
+        </li>
+        
+        <li>
+            Football
+        </li>
+        
+    </ul>
+</div>
+
+
+
+<div class="academia col">
+    <h4 class="main_color">Academia</h4>
+    
+    <div class="row">
+        <div class="course col">
+            <div class="institution_dates row">
+                <div class="institution col" id="institution_title">
+                    Harper Adams University
+                </div>
+                <div class="main_color dates col-md-auto  justify-content-end">
+                    2019
+                    
+                    - present
+                    
+                </div>
+            </div>
+            <div class="degree_major row">
+                <div class="text-muted col">
+                    Ph.D. Data Analytic
+
+                    
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="course col">
+            <div class="institution_dates row">
+                <div class="institution col" id="institution_title">
+                    The Ohio State University
+                </div>
+                <div class="main_color dates col-md-auto  justify-content-end">
+                    2014
+                    
+                    - 2016
+                    
+                </div>
+            </div>
+            <div class="degree_major row">
+                <div class="text-muted col">
+                    M.Sc. Biosystem Engineering
+
+                    
+                </div>
+            </div>
+
+            
+            <div class="other_info row text-muted">
+                <div class="col">
+                    graduated with 3.9 GPA
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="course col">
+            <div class="institution_dates row">
+                <div class="institution col" id="institution_title">
+                    University of Dar es Salaam
+                </div>
+                <div class="main_color dates col-md-auto  justify-content-end">
+                    2009
+                    
+                    - 2013
+                    
+                </div>
+            </div>
+            <div class="degree_major row">
+                <div class="text-muted col">
+                    B.Sc. Computer Engineering
+
+                    
+                </div>
+            </div>
+
+            
+            <div class="other_info row text-muted">
+                <div class="col">
+                    graduated with upper second class honor
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
 
 
 </div>
 
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row w-100">
+    <div class="col w-100">
+        
+        <div class="row w-100">
+            <div class="col w-100">
+                
+                <h3 class="row  w-100 section-title main_color"> Publications </h3>
+                
+
+                
+                <h6 class="row w-100 section-subtitle  text-muted"> See my google scholar for the latest list </h6>
+                
+            </div>
+        </div>
+        
+
+
+
+
+
+<div class="publications row w-100">
+    <div class="col w-100">
+        
+        <div class="publication row  w-100">
+
+            <div class="section-1 w-100">
+                <span>
+                    ,
+                </span>
+
+                <span class="text-muted publication-date">
+                    ,
+                </span>
+
+                <span class="text-muted publication-name">
+                    
+                </span>
+
+            </div>
+
+            <div class="section-2 text-muted w-100">
+
+                
+
+                
+
+            </div>
+
+            
+            
+
+
+
+        </div>
+
+        
+        <div class="publication row  w-100">
+
+            <div class="section-1 w-100">
+                <span>
+                    ,
+                </span>
+
+                <span class="text-muted publication-date">
+                    ,
+                </span>
+
+                <span class="text-muted publication-name">
+                    
+                </span>
+
+            </div>
+
+            <div class="section-2 text-muted w-100">
+
+                
+
+                
+
+            </div>
+
+            
+            
+
+
+
+        </div>
+
+        
+
+    </div>
+    
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row w-100">
+    <div class="col w-100">
+        
+        <div class="row w-100">
+            <div class="col w-100">
+                
+                <h3 class="row  w-100 section-title main_color"> Projects </h3>
+                
+
+                
+                <h6 class="row w-100 section-subtitle  text-muted"> See my [github] for the complete list </h6>
+                
+            </div>
+        </div>
+        
+
+
+
+
+
+<div class="projects row w-100">
+    <div class="col w-100">
+        
+        <div class="project row w-100">
+            <div class="section-1 w-100">
+                <span class="project-title">
+                    
+                </span>
+            </div>
+
+            
+            
+
+
+        </div>
+        
+        <div class="project row w-100">
+            <div class="section-1 w-100">
+                <span class="project-title">
+                    
+                </span>
+            </div>
+
+            
+            
+
+
+        </div>
+        
+
+
+    </div>
+    
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<footer class="mt-auto d-flex justify-content-center text-muted small secondary_font">
+    <span class="text-muted">Copyright (c) 2021, Peter CN,
+        <a class="text-muted" href="https://github.com/hadisinaee/avicenna" target="_blank"> created by Avicenna
+            (MIT)</a>
+    </span>
+</footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
 <script>
+    feather.replace()
+</script></body>
 
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
-
-
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
-</body>
 </html>
